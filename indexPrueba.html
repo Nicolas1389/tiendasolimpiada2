@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <style>
+        .producto {
+            margin-bottom: 10px;
+        }
+        .carrito {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Carrito de Compras</h1>
+    
+    <!-- Productos disponibles -->
+    <div id="productos">
+        <div class="producto">
+            <span>Producto 1 - $10</span>
+            <button onclick="agregarAlCarrito('Producto 1', 10)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <span>Producto 2 - $15</span>
+            <button onclick="agregarAlCarrito('Producto 2', 15)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <span>Producto 3 - $20</span>
+            <button onclick="agregarAlCarrito('Producto 3', 20)">Agregar al carrito</button>
+        </div>
+    </div>
+    
+    <!-- Sección del carrito -->
+    <div class="carrito">
+        <h2>Tu Carrito</h2>
+        <ul id="carrito-lista">
+            <!-- Aquí aparecerán los productos agregados -->
+        </ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button onclick="vaciarCarrito()">Vaciar carrito</button>
+    </div>
+    
+    <script src="carrito.js"></script>
+</body>
+</html>

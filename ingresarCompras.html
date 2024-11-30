@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <h6 >
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrito de compras</title>
+        <link rel="stylesheet" href="style.css">
+    </h6>
+</head>
+
+    <body class="bodyCompras">
+
+    <div class="container"></div>
+    <nav class="carrito"  >
+        <h1 id="cantidadCarrito" class="cantidadCarrito" >  </h1>
+        <img onclick="abrirCarrito()" style="cursor: pointer;" width="10%" height="10%" src="img/anadir-al-carrito.png" alt="">
+        <h2 class="info">Tu Carrito</h2>
+        <ul id="carrito-lista">
+            <!-- Aquí aparecerán los productos agregados -->
+        </ul>
+        
+        <button onclick="vaciarCarrito()" >Vaciar carrito</button>
+            <div>
+                <p>Total: $<span id="total">0</span></p>
+            </div>
+    </nav>
+    
+    <nav>
+        <button class="botonPago">
+        
+            <link rel="stylesheet" href="style.css">
+            <a class="botonPago" href="paginaDePago.html">PAGAR</a>
+        </button> 
+    </nav>
+    <h1>Eventos disponibles</h1>
+    
+    <div class="grid">
+        <div class="items">
+            <img src="img/imagenesCatalogoVirtual/balon 1.jpg">
+            <div class="info">
+                <h3 >Balón </h3>
+                <p >Fecha de entrega 4 días hábiles</p>
+                <div class="precio">
+                    <p>Valor</p>
+                    <p >COP $ 40.000.oo</p>
+                    <p>Pagando con tarjeta de crédito</p>
+                    <p  >COP $ 37.000.oo</p>
+                </div>
+                <button onclick="agregarAlCarrito('balon',40000)" class="jello" >Agregar al carrito</button>
+            </div>
+        </div>
+        
+        <div class="items">
+            <img src="img/imagenesCatalogoVirtual/eliptica.jpg">
+            <div class="info">
+                <h3  >Eliptica</h3>
+                <p  >10 días hábiles para la entrega</p>
+                <div class="precio">
+                    <p>Valor</p>
+                    <p id="precioRBD" >COP $ 870.000.oo</p>
+                    <p>Pagando con tarjeta de crédito</p>
+                    <p id="tarjetaRBD" >COP $ 650.000.oo</p>
+                </div>
+                <button onclick="agregarAlCarrito('Eliptica', 870000)" class="jello">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="items">
+            <img src="img/imagenesCatalogoVirtual/pressbanca.jpg">
+            <div class="info">
+                <h3  >10 días hábiles para la entrega"</h3>
+                <p >rackpesas</p>
+                <div class="precio">
+                    <p>Valor</p>
+                    <p  >COP $ 1.580.000.oo</p>
+                    <p>Pagando con tarjeta de crédito</p>
+                    <p  >COP $ 1.240.000.oo</p>
+                </div>
+                <button onclick="agregarAlCarrito('rack pesas', 1580000)" class="jello">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="items">
+            <img src="img/imagenesCatalogoVirtual/multifuncional.jpg">
+            <div class="info">
+                <h3  >multifuncional</h3>
+                <p  >disponible dentro de 10 días</p>
+                <div class="precio">
+                    <p>Valor</p>
+                    <p  >COP $ 750.000.oo</p>
+                    <p>Pagando con tarjeta de crédito</p>
+                    <p >COP $ 700.000.oo</p>
+                </div>
+                <button onclick="agregarAlCarrito('Multifuncional ', 750000)" class="jello">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="items">
+            <img src="img/imagenesCatalogoVirtual/istockphoto-531520849-612x612.jpg">
+            <div class="info">
+                <h3> pesas.</h3>
+                <p >solo envios nacionales</p>
+                <div class="precio">
+                    <p>Valor</p>
+                    <p>COP $ 120.000.oo</p>
+                    <p>Pagando con tarjeta de crédito</p>
+                    <p>COP $ 90.000.oo</p>
+                </div>
+                <button onclick="agregarAlCarrito('pesas', 120000)" class="jello">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="items">
+            <img src="img/imagenesCatalogoVirtual/multi2.jpg">
+            <div class="info">
+                <h3> multifuncional</h3>
+                <p>El mejor del mercado</p>
+                <div class="precio">
+                    <p>Valor</p>
+                    <p >COP $ 120.000.oo</p>
+                    <p>Pagando con tarjeta de crédito</p>
+                    <p >COP $ 90.000.oo</p>
+                </div>
+                <button onclick="agregarAlCarrito('Multifuncional 2', 120000)" class="jello">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/estantePesas.jpg">
+                <div class="info">
+                    <h3>Estante para pesas </h3>
+                    <p>Fecha de entrega 20 días hábiles</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p>COP $ 440.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p >COP $ 437.000.oo</p>
+                    </div>
+                    <button onclick="agregarAlCarrito('Estante para pesas', 440000)" class="jello" >Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/bancoParaEjercicio.png">
+                <div class="info">
+                    <h3 >Banco para hacer ejercicio</h3>
+                    <p >10 días hábiles para la entrega</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p >COP $ 870.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p >COP $ 650.000.oo</p>
+                    </div>
+                    <button onclick="agregarAlCarrito('Banco para hacer ejercicio 1', 870000)" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/BasculaColorNegro.jpg">
+                <div class="info">
+                    <h3>10 días hábiles para la entrega"</h3>
+                    <p>rackpesas</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p>COP $ 1.580.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p>COP $ 1.240.000.oo</p>
+                    </div>
+                    <button onclick="agregarAlCarrito('Rack pesas', 1580000)" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/basculaDigital.jpg">
+                <div class="info">
+                    <h3 >bascula digital</h3>
+                    <p>disponible dentro de 10 días</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p>COP $ 50.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p >COP $ 40.000.oo</p>
+                    </div>
+                    <button onclick="agregarAlCarrito('Bascula digital', 50000)" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/rueda de pesa.jpg">
+                <div class="info">
+                    <h3 > pesas.</h3>
+                    <p >solo envios nacionales</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p >COP $ 30.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p >COP $ 25.000.oo</p>
+                    </div>
+                    <button onclick="agregarAlCarrito('pesas', 30000)" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/basculaClasica.jpg">
+                <div class="info">
+                    <h3 > Bascula clasica</h3>
+                    <p >El mejor del mercado</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p>COP $ 220.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p>COP $ 190.000.oo</p>
+                    </div>
+                    <button onclick="agregarAlCarrito('Bascula clasica', 220000)" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/balonFutbolADIDAS.avif">
+                <div class="info">
+                    <h3>Balón adidas</h3>
+                    <p>disponible dentro de 10 días</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p>COP $ 750.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p>COP $ 700.000.oo</p>
+                    </div>
+                    <button onclick="agregarAlCarrito('Balón adidas', 750000)" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/balonfutbolverde.jpg">
+                <div class="info">
+                    <h3 > balon de futbol.</h3>
+                    <p>solo envios nacionales</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p>COP $ 30.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p >COP $ 25.000.oo</p>
+                    </div>
+                    <button onclick="agregarAlCarrito('Balón de futbol', 30000)" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/balonBasketball.jpg">
+                <div class="info">
+                    <h3> balon de basketball wilson</h3>
+                    <p>El mejor del mercado</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p>COP $ 220.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p>COP $ 190.000.oo</p>
+                    </div>
+                    <button onclick="agregarAlCarrito('Balón de basketball Wilson', 220000)" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/BasculaColorNegro.jpg">
+                <div class="info">
+                    <h3>10 días hábiles para la entrega"</h3>
+                    <p>rackpesas</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p>COP $ 1.580.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p >COP $ 1.240.000.oo</p>
+                    </div>
+                    <button onclick="agregarAlCarrito('rack pesas 2', 1580000)" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/basculaDigital.jpg">
+                <div class="info">
+                    <h3  >bascula digital</h3>
+                    <p>disponible dentro de 10 días</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p>COP $ 50.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p>COP $ 40.000.oo</p>
+                    </div>
+                    <button onclick="agregarAlCarrito('Bascula digital', 50000)" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/rueda de pesa.jpg">
+                <div class="info">
+                    <h3> pesas.</h3>
+                    <p >solo envios nacionales</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p>COP $ 30.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p>COP $ 25.000.oo</p>
+                    </div>
+                    <button onclick="agregarAlCarrito('rueda pesas 15kg', 30000)" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/basculaClasica.jpg">
+                <div class="info">
+                    <h3 > Bascula clasica</h3>
+                    <p >El mejor del mercado</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p >COP $ 220.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p>COP $ 190.000.oo</p>
+                    </div>
+                    <button onclick="agregarAlCarrito('Bascula clasica', 220000)" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/balonFutbolADIDAS.avif">
+                <div class="info">
+                    <h3>Balón adidas</h3>
+                    <p>disponible dentro de 10 días</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p>COP $ 400.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p>COP $ 350.000.oo</p>
+                    </div>
+                    <button onclick="agregarAlCarrito('Balón adidas 2', 400000)" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/balonfutbolverde.jpg">
+                <div class="info">
+                    <h3> balon de futbol.</h3>
+                    <p >solo envios nacionales</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p>COP $ 40.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p>COP $ 35.000.oo</p>
+                    </div>
+                    <button onclick="agregarAlCarrito('Balón 3', 40000)" class="jello">Agregar al carrito</button>
+                </div>
+                <script src="carrito.js"></script>
+    </body>
+   
+</html>
